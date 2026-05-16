@@ -1,17 +1,17 @@
-package it.leoalicino.studio_magazzino.dto.request;
+package it.leoalicino.studio_magazzino.dto.item.request;
 
 
-public class CreateItemRequest {
+public class UpdateItemRequest {
 
     private String name;
     private String description;
     private double price;
 
 
-    public CreateItemRequest(){
+    public UpdateItemRequest(){
     }
 
-    public CreateItemRequest(String name, String description, double price){
+    public UpdateItemRequest(String name, String description, double price){
     this.name = name;
     this.description = description;
     this.price = price;

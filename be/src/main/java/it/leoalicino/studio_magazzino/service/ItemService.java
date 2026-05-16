@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import it.leoalicino.studio_magazzino.repository.ItemRepository;
 import it.leoalicino.studio_magazzino.domain.Item;
 import java.util.List;
+import org.springframework.data.domain.Sort;
 
 @Service
 public class ItemService {
@@ -33,7 +34,7 @@ public class ItemService {
     }
 
     public List<Item> findAllItems(){
-        return itemRepository.findAll();
+        return itemRepository.findAll(Sort.by(Sort.Direction.ASC, "id"));
     }
 
 

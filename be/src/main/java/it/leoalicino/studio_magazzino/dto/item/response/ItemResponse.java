@@ -1,4 +1,4 @@
-package it.leoalicino.studio_magazzino.dto.response;
+package it.leoalicino.studio_magazzino.dto.item.response;
 
 public class ItemResponse {
     private Long id;
