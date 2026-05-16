@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: studio-magazzino-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: magazzino
+    ports:
+      - "5434:5432"
+    volumes:
+      - studio_magazzino_pgdata:/var/lib/postgresql/data
+
+volumes:
+  studio_magazzino_pgdata:
